@@ -19,7 +19,7 @@ public class oops {
 
     public static void main(String[] args) {
         oops2 ob = new oops2("patna", 2333);
-        oops2 ob2 = new oops2("delhi");
+        // oops2 ob2 = new oops2("delhi");
         // System.out.println(ob.city);
 
         // System.out.println(ob2.city);
