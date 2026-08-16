@@ -12,7 +12,7 @@ class BankAccount {
     private boolean isLocked = false;
     
     // VERIFIED TELEGRAM SETTINGS
-    private final String botToken = "8316969819:AAFYZ-UMp8Lk1gv0iNjoyDc7epPYxfUiJng"; 
+    private final String botToken ="8316969819:AAFYZ-UMp8Lk1gv0iNjoyDc7epPYxfUiJng"; 
     private final String chatId = "1200869342";
 
     // CORE: Professional SMS Alert System
