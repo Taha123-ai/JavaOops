@@ -3,3 +3,7 @@
 target/
 out/
 bin/
+constant/
+.env
+.env.*
+!.env.example.env

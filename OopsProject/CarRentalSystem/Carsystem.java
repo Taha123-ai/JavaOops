@@ -35,10 +35,8 @@ public class Carsystem {
                         getrentedcarlist();
                         break;
                     case 4:
-                        System.out.println("Exiting.");
-                        System.out.println("\nThankyou for choosing us.\n");
-                        mainmenu();
-                        break;
+                        System.out.println("\nReturning to main menu.\n");
+                        return;
                     default:
                         System.out.println("Select Valid Choice.");
                         break;
@@ -67,12 +65,11 @@ public class Carsystem {
         System.out.println("2. CUSTOMER");
         System.out.println("3. EXIT");
 
-        int choice1 = 0;
-        while (choice1 != 3) {
+        int choice;
+        while (true) {
             System.out.print("\nSelect Options: ");
-            int choice = sc.nextInt();
-            choice1 = choice;
-            switch (choice1) {
+            choice = sc.nextInt();
+            switch (choice) {
                 case 1:
                     adminpannel();
                     break;
@@ -82,7 +79,7 @@ public class Carsystem {
                 case 3:
                     System.out.println("Exiting.");
                     System.out.println("\nThankyou for choosing us.\n");
-                    break;
+                    return;
                 default:
                     System.out.println("Select Valid Choice.");
                     break;
@@ -148,7 +145,7 @@ public class Carsystem {
             System.out.println("6. EXIT");
 
             int choice = 0;
-            while (choice != 6) {
+            while (true) {
                 System.out.print("Select Number: ");
                 choice = sc.nextInt();
                 if (choice >= 1 && choice <= 6) {
@@ -167,15 +164,15 @@ public class Carsystem {
                             break;
                         case 5:
                             System.out.println("\nLogging Out..\n");
-                            mainmenu();
                             System.out.println("-----------------------");
-                            break;
+                            return;
                         case 6:
                             System.out.println("Exiting.");
                             System.out.println("\nThankyou for contribution.\n");
                             System.out.println("-----------------------");
+                            return;
 
-                            break;
+                            
                         default:
                             System.out.println("Select Valid Choice.");
                             break;

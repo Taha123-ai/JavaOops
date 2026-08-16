@@ -12,8 +12,10 @@ class BankAccount {
     private boolean isLocked = false;
     
     // VERIFIED TELEGRAM SETTINGS
-    private final String botToken ="8316969819:AAFYZ-UMp8Lk1gv0iNjoyDc7epPYxfUiJng"; 
-    private final String chatId = "1200869342";
+    private  final String botToken = "//bottoken"; 
+    private final String chatId ="//chatid";
+    
+    
 
     // CORE: Professional SMS Alert System
     public void sendPhoneAlert(String type, double amount, String status, String alertLevel) {
